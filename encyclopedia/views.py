@@ -1,8 +1,6 @@
-import json
 import markdown2
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
-from django.views.decorators.csrf import ensure_csrf_cookie
 
 from . import util
 
