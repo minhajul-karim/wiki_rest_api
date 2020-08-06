@@ -11,6 +11,7 @@ autopep8 = "*"
 django = "==3.0.8"
 django-cors-headers = "*"
 markdown2 = "*"
+djangorestframework = "*"
 
 [requires]
 python_version = "3.6"
