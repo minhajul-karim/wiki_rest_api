@@ -46,7 +46,7 @@ def entry_detail(request, title):
         if content:
             return Response({
                 "title": title,
-                "content": markdown2.markdown(content)
+                "content": content
             })
         return Response({})
     elif request.method == "PUT":
@@ -54,6 +54,5 @@ def entry_detail(request, title):
         content = request.data["content"]
         util.save_entry(title, content)
         return Response({
-            "title": title,
-            "content": content
+            "file_updated": True
         })
