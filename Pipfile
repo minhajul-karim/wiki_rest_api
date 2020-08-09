@@ -10,7 +10,6 @@ autopep8 = "*"
 [packages]
 django = "==3.0.8"
 django-cors-headers = "*"
-markdown2 = "*"
 djangorestframework = "*"
 
 [requires]
