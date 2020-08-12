@@ -20,6 +20,27 @@ def api_overview(request):
 def entries_list(request):
     """List of all available wiki entries."""
     if request.method == "GET":
+        # If url has query parameter name
+        name = request.GET.get("page")
+        if name:
+            files = util.list_entries()
+            possible_files = []
+            for file in files:
+                if name == file:
+                    return Response({
+                        "display": name
+                    })
+                elif name in file:
+                    possible_files.append(file)
+            if possible_files:
+                return Response({
+                    "entries": possible_files
+                })
+            else:
+                return Response({
+                    "page_exists": False
+                })
+        # Response to URLs w/o query parameters
         return Response({
             "entries": util.list_entries()
         })

@@ -1,4 +1,3 @@
-
 # Wiki
 A REST API to serve an encyclopedia like wikipedia.
 
@@ -9,27 +8,29 @@ Returns all entries.
 
 * **URL**
 
-    /entries
+  <_/entries_>
 
 * **Method:**
   
-
-    GET
-
+  <_GET_>
   
 *  **URL Params**
-
-    None
+None
 
 * **Data Params**
-
-    None
+None
 
 * **Success Response:**
 
   * **Code:** 200 <br />
-    **Content:** 
-    {
-        entries: ['bangladesh', 'computer', 'django', 'git', 'html', 'python', 'sass'],
-    }
-
+    **Content:** `{
+    "entries": [
+        "bangladesh",
+        "computer",
+        "django",
+        "git",
+        "html",
+        "python",
+        "sass",
+    ]
+}`
