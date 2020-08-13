@@ -1,1 +1,1 @@
-web: gunicorn pizza.wsgi --log-file -
+web: gunicorn wiki.wsgi --log-file -
