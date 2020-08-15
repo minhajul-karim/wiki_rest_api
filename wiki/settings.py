@@ -35,8 +35,7 @@ SECRET_KEY = env("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env("DEBUG")
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1',
-                 '0.0.0.0', 'wiki-rest-api.herokuapp.com', 'wiki-client.netlify.app']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '0.0.0.0', 'wiki-rest-api.herokuapp.com']
 
 
 # Application definition
@@ -140,5 +139,6 @@ STATIC_URL = '/'
 # DISABLE_COLLECTSTATIC = 1
 
 CORS_ORIGIN_WHITELIST = [
-    "http://localhost:3000"
+    "http://localhost:3000",
+    "https://wiki-client.netlify.app/"
 ]
