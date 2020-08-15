@@ -36,7 +36,7 @@ SECRET_KEY = env("SECRET_KEY")
 DEBUG = env("DEBUG")
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1',
-                 '0.0.0.0', 'wiki-rest-api.herokuapp.com']
+                 '0.0.0.0', 'wiki-rest-api.herokuapp.com', 'wiki-client.netlify.app']
 
 
 # Application definition
