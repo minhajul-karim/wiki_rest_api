@@ -140,5 +140,6 @@ STATIC_URL = '/'
 
 CORS_ORIGIN_WHITELIST = [
     "http://localhost:3000",
-    "https://wiki-client.netlify.app/"
+    "http://localhost:19006",
+    "https://wiki-client.netlify.app"
 ]
