@@ -2,6 +2,9 @@
 # Wiki
 A REST API to serve an encyclopedia like wikipedia.
 
+## Demonstration
+The demonstration of this API can be seen [here](https://wiki-rest-api.herokuapp.com/api/).
+
 # Api Overview
 
 **Show entries**
